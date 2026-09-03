@@ -158,8 +158,8 @@ No. Only the three Challenge Token slots. Rank banner, profile icon,
 background, title — all untouched.
 
 **Do I have to run it every game?**
-Sometimes the client re-equips tokens after a match. If that happens, just
-run the tool again.
+Sometimes the client re-equips tokens after a match. If that happens, you can just
+run the tool again to remove the tokens.
 
 **Can I use the --cli flag on Windows?**
 Yes: open Command Prompt or PowerShell, navigate to the script's folder, and
