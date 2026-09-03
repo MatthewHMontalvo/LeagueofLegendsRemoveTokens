@@ -16,7 +16,7 @@ terminal prompt if you prefer (`--cli` flag).
 
 | Before | After |
 |:---:|:---:|
-| ![Profile with tokens equipped](/profile_before.png) | ![Profile with tokens cleared](screenshots/profile_after.png) |
+| ![Profile with tokens equipped](/profile_before.png) | ![Profile with tokens cleared](/screenshots/profile_after.png) |
 | Three challenge tokens filling your banner | All three slots cleared and empty |
 
 ---
