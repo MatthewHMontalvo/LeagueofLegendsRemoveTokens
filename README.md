@@ -12,6 +12,23 @@ terminal prompt if you prefer (`--cli` flag).
 
 ---
 
+## Before & After
+
+| Before | After |
+|:---:|:---:|
+| ![Profile with tokens equipped](assets/screenshots/screenshot_before.png) | ![Profile with tokens cleared](assets/screenshots/screenshot_after.png) |
+| Three challenge tokens filling your banner | All three slots cleared and empty |
+
+---
+
+## The tool
+
+| Ready | Done |
+|:---:|:---:|
+| ![GUI ready state](assets/screenshots/screenshot_gui_ready.png) | ![GUI success state](assets/screenshots/screenshot_gui_done.png) |
+| Detects your account automatically | One click — tokens gone |
+
+---
 ## Why this instead of other tools?
 
 | Because it's just Python — open it like any other program |
