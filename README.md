@@ -1,4 +1,4 @@
-[README (1).md](https://github.com/user-attachments/files/31811602/README.1.md)
+
 # LoL Token Remover
 
 A single Python script that removes all three Challenge Token slots from your
