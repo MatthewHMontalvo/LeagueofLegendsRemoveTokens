@@ -14,8 +14,7 @@ terminal prompt if you prefer (`--cli` flag).
 
 ## Why this instead of other tools?
 
-| Tool | What you need |
-| Just Python — open it like any other program |
+| Because it's just Python — open it like any other program |
 
 Because the GUI is built with `tkinter` (bundled with every standard Python
 installer), you need **zero extra installs** beyond Python itself.
