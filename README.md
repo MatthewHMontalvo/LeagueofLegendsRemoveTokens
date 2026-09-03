@@ -2,8 +2,7 @@
 # LoL Token Remover
 
 A single Python script that removes all three Challenge Token slots from your
-League of Legends profile banner — something the official client won't let you
-do (it always leaves at least one filled).
+League of Legends profile banner.
 
 Opens as a **one-click GUI app** when you run it normally. Falls back to a
 terminal prompt if you prefer (`--cli` flag).
@@ -16,10 +15,7 @@ terminal prompt if you prefer (`--cli` flag).
 ## Why this instead of other tools?
 
 | Tool | What you need |
-|---|---|
-| **ChallengesAreEvil** (most popular) | Download an `.exe`, bypass antivirus warnings, trust a binary |
-| **PowerShell / Bash scripts** | Know how to open a terminal, set execution policy, etc. |
-| **This tool** | Just Python — open it like any other program |
+| Just Python — open it like any other program |
 
 Because the GUI is built with `tkinter` (bundled with every standard Python
 installer), you need **zero extra installs** beyond Python itself.
@@ -83,8 +79,8 @@ and wait for you to click the button. That's it.
 ## What it looks like
 
 ```
-┌──────────────────────────────────────────┐  ← gold border
-│  ⚔  LoL Token Remover                   │
+┌──────────────────────────────────────────┐  
+│  ⚔  LoL Token Remover                    │
 │  Clears all Challenge Token slots…       │
 ├──────────────────────────────────────────┤
 │  Logged in as:  YourName                 │
@@ -92,7 +88,7 @@ and wait for you to click the button. That's it.
 ├──────────────────────────────────────────┤
 │  [ Remove All Tokens ]                   │
 ├──────────────────────────────────────────┤
-│  Not affiliated with Riot Games  •  …   │
+│  Not affiliated with Riot Games  •  …    │
 └──────────────────────────────────────────┘
 ```
 
@@ -113,7 +109,7 @@ POST /lol-challenges/v1/update-player-preferences/
 ```
 
 An empty array tells the client to unequip all token slots — the same internal
-call the client makes when you swap tokens manually. If that endpoint fails
+call the client makes when you want to swap tokens manually. If that endpoint fails
 (e.g. after a Riot patch), the script automatically tries a second method via
 `/lol-regalia/v2/current-summoner/regalia`.
 
