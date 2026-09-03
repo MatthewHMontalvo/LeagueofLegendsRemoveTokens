@@ -16,7 +16,7 @@ terminal prompt if you prefer (`--cli` flag).
 
 | Before | After |
 |:---:|:---:|
-| ![Profile with tokens equipped](assets/screenshots/screenshot_before.png) | ![Profile with tokens cleared](assets/screenshots/screenshot_after.png) |
+| ![Profile with tokens equipped](/profile_before.png) | ![Profile with tokens cleared](assets/screenshots/profile_after.png) |
 | Three challenge tokens filling your banner | All three slots cleared and empty |
 
 ---
@@ -25,7 +25,7 @@ terminal prompt if you prefer (`--cli` flag).
 
 | Ready | Done |
 |:---:|:---:|
-| ![GUI ready state](assets/screenshots/screenshot_gui_ready.png) | ![GUI success state](assets/screenshots/screenshot_gui_done.png) |
+| ![GUI ready state](assets/screenshots/GUI_before.png) | ![GUI success state](assets/screenshots/GUI_after.png) |
 | Detects your account automatically | One click — tokens gone |
 
 ---
