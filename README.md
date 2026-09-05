@@ -56,7 +56,7 @@ Download from [python.org](https://www.python.org/downloads/).
 
 > **Windows:** tick **"Add Python to PATH"** during installation.
 
-### 2 — Install the two small dependencies
+### 2 — Install the dependencies
 
 Open a terminal and run:
 
