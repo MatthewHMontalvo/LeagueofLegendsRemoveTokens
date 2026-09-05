@@ -7,7 +7,7 @@ League of Legends profile banner.
 Opens as a **one-click GUI app** when you run it normally. Falls back to a
 terminal prompt if you prefer (`--cli` flag).
 
-> **Not affiliated with Riot Games.** All requests go to `127.0.0.1` only —
+> **Not affiliated with Riot Games.** All requests go to `127.0.0.1` only 
 > nothing leaves your machine.
 
 ---
@@ -26,12 +26,12 @@ terminal prompt if you prefer (`--cli` flag).
 | Ready | Done |
 |:---:|:---:|
 | ![GUI ready state](/LeagueTokenScreenshots//GUI_before.png) | ![GUI success state](/LeagueTokenScreenshots//GUI_after.png) |
-| Detects your account automatically | One click — tokens gone |
+| Detects your account automatically | One click and the tokens are gone |
 
 ---
 ## Why this instead of other tools?
 
-| Because it's just Python — open it like any other program |
+| Because it's just Python, open it like any other program |
 
 Because the GUI is built with `tkinter` (bundled with every standard Python
 installer), you need **zero extra installs** beyond Python itself.
@@ -42,7 +42,7 @@ installer), you need **zero extra installs** beyond Python itself.
 
 | | |
 |---|---|
-| **Python** | 3.8 or newer — [python.org](https://www.python.org/downloads/) |
+| **Python** | 3.8 or newer - [python.org](https://www.python.org/downloads/) |
 | **OS** | Windows 10/11 or macOS |
 | **League client** | Must be open and logged in when you run the tool |
 
@@ -50,13 +50,13 @@ installer), you need **zero extra installs** beyond Python itself.
 
 ## Setup (one time)
 
-### 1 — Install Python
+### 1 - Install Python
 
 Download from [python.org](https://www.python.org/downloads/).
 
 > **Windows:** tick **"Add Python to PATH"** during installation.
 
-### 2 — Install the dependencies
+### 2 - Install the dependencies
 
 Open a terminal and run:
 
@@ -67,9 +67,9 @@ pip install psutil requests urllib3
 `psutil` reads the League client process to find its port and auth token.
 `requests` sends the API call. `urllib3` suppresses the SSL warning from the
 client's self-signed certificate. The GUI itself (`tkinter`) is already
-included with Python — no install needed.
+included with Python. So, no install is needed.
 
-### 3 — Download the script
+### 3 - Download the script
 
 Save `remove_lol_tokens.py` anywhere on your computer.
 
@@ -78,7 +78,7 @@ Save `remove_lol_tokens.py` anywhere on your computer.
 ## How to run
 
 **Double-click** `remove_lol_tokens.py` in File Explorer (Windows) or Finder
-(macOS) — if Python is associated with `.py` files, the GUI opens immediately.
+(macOS) - if Python is associated with `.py` files, the GUI opens immediately.
 
 Or from a terminal:
 
@@ -100,7 +100,7 @@ and wait for you to click the button. That's it.
 │  Clears all Challenge Token slots…       │
 ├──────────────────────────────────────────┤
 │  Logged in as:  YourName                 │
-│  Ready — click the button to clear.      │
+│  Ready - click the button to clear.      │
 ├──────────────────────────────────────────┤
 │  [ Remove All Tokens ]                   │
 ├──────────────────────────────────────────┤
@@ -109,7 +109,7 @@ and wait for you to click the button. That's it.
 ```
 
 The button is disabled until the client is detected. After clicking, it shows
-a confirmation inline — no popups.
+a confirmation inline - no popups.
 
 ---
 
@@ -124,9 +124,9 @@ POST /lol-challenges/v1/update-player-preferences/
 { "challengeIds": [] }
 ```
 
-An empty array tells the client to unequip all token slots — the same internal
+An empty array tells the client to unequip all token slots using the same internal
 call the client makes when you want to swap tokens manually. If that endpoint fails
-(e.g. after a Riot patch), the script automatically tries a second method via
+(e.g., after a Riot patch), the script automatically tries a second method via
 `/lol-regalia/v2/current-summoner/regalia`.
 
 ---
@@ -151,14 +151,13 @@ call the client makes when you want to swap tokens manually. If that endpoint fa
 Almost certainly not. This uses the same local API the client itself uses
 internally, doesn't touch game files, and only modifies a cosmetic profile
 setting. No bans have been reported from similar tools. Use at your own
-discretion — Riot's policies can change.
+discretion. Riot's policies can change.
 
 **Does it change anything else on my profile?**
-No. Only the three Challenge Token slots. Rank banner, profile icon,
-background, title — all untouched.
+No. Only the three Challenge Token slots. 
 
 **Do I have to run it every game?**
-Sometimes the client re-equips tokens after a match. If that happens, you can just
+Sometimes the client might re-equip tokens after a match. If that happens, you can just
 run the tool again to remove the tokens.
 
 **Can I use the --cli flag on Windows?**
@@ -168,10 +167,10 @@ run `python remove_lol_tokens.py --cli`.
 **Why not just ship a .exe?**
 A compiled `.exe` with no verified publisher triggers antivirus false positives
 (ChallengesAreEvil's biggest user complaint). A plain `.py` file is fully
-readable — you can see exactly what it does before running it.
+readable; you can see exactly what it does before running it.
 
 ---
 
 ## License
 
-Public domain — do whatever you want with it.
+
