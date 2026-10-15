@@ -517,13 +517,13 @@ def run_cli():
 
     creds = find_lcu_credentials()
     if not creds:
-        print("\n❌  League client not found.")
+        print("\nFail,  League client not found.")
         print("    Open the client and log in, then run this script again.")
         print("    On Windows, try running as Administrator.")
         print("    On macOS, use: sudo python3 remove_lol_tokens.py --cli")
         sys.exit(1)   # exit with code 1 to signal failure to the terminal
 
-    print(f"✅  Client found on port {creds['port']}.")
+    print(f"Passed,  Client found on port {creds['port']}.")
     name = get_summoner_name(creds)
     if name:
         print(f"👤  Logged in as: {name}")
@@ -538,10 +538,10 @@ def run_cli():
     print()
     ok, msg = clear_tokens(creds)
     if ok:
-        print(f"✅  {msg}")
+        print(f"Passed,  {msg}")
         print("    Re-open your profile in the client to see the change.")
     else:
-        print(f"❌  {msg}")
+        print(f"Fail,  {msg}")
         sys.exit(1)
 
 
